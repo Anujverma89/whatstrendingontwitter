@@ -8,11 +8,10 @@ generalRouter.get("/",async(req,res)=>{
       let trending = await scrapper();
       insertIntoDb(trending);
       let result = await fetchfromDatabase(trending.uid);
-      console.log(result)
       res.render("index",{"trends":result});
     }catch(e){
       console.log(e)
-      res.send("Something went wrong at ourend");
+      res.send("UMMM There's something wrong");
     }
 })
 

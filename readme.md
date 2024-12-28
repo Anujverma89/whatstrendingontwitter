@@ -1,11 +1,13 @@
-# backend: : expressjs 
-# Frontend : ejs
-# database : mongodb
+### Requirements : 
+* Node
+* Express
+* npm 
+* mongodb
 
-### flow : 
-* Click fetch button 
-* Log the time of the clicked  button
-* run the script 
-* Log the finish time 
-* save in data base 
-* show the record of trends result in html page
+
+### Steps to run : 
+* Clone the current project 
+* Install the dependencies and packages
+* install & run mongodb server 
+* npm run start
+* Hurray get the latest trends now 
