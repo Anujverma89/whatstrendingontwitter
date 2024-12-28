@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Stir - Let's connect the world ! </title>
+</head>
+
+<body>
+    <div class="headernavbar">
+        <div class="imageDiv">
+            <img src="/static/images/logo.png" alt="logo_image">
+        </div>
+    </div>
+
+    <div class="contentSection">
+        <div class="trendingSection">
+            <a href="/"><button onclick="fetchData()">See What's trending now </button></a>
+
+            <div class="trending">
+                <div class="trends">
+                    <h4>Trend 1: <%= trends.trend1 %></h4>
+                    <h4>Trend 2: <%= trends.trend2 %></h4>
+                    <h4>Trend 3: <%= trends.trend3 %></h4>
+                    <h4>Trend 4: <%= trends.trend4 %></h4>
+                    <h4>Trend 5: <%= trends.trend5 %></h4>
+                </div>
+                <div class="schema">
+                    <code><%= JSON.stringify(trends, null, 2) %></code>
+                </div>
+            </div>
+            <h3>The IP address used for this query was : <%= trends.ipAddress %></p>
+            <div class="fetchmintue">
+                <h4>The most happening topic as on : <%= trends.endTime %></h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
