@@ -3,7 +3,7 @@
 * Express
 * npm 
 * mongodb
-
+* Pre installed chrome browser
 
 ### Steps to run : 
 * Clone the current project 
